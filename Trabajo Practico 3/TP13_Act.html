@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Formulario compra</title>
+    </head>
+    <!--Nombre (25 caracteres máximo) 
+    • Apellido (25 caracteres máximo) 
+    • Dirección (un textarea de 30 caracteres máximo) 
+    • Teléfono (15 caracteres máximo con un valor inicial 0299) 
+    • Permitir seleccionar solo una de las siguientes opciones (Alquiler, compra) por defecto 
+    seleccionado compra 
+    • Permitir seleccionar una o mas de las siguientes opciones (zona centro, zona norte, zona 
+    sur), por defecto seleccionada zona centro y zona sur 
+    • Comentario del inmueble que busca 
+    • Botón para resetear el formulario 
+    • Botón para enviar los datos al servidor-->
+    <body>
+        <form>
+            <table border="">
+                <tr>
+                    <td>Nombre </td>
+                    <td><input type="text" name="nombre" id="nombre" placeholder="nombre" maxlength="25"></td>
+                </tr>
+                <tr>
+                    <td>Apellido</td>
+                    <td><input type="text" name="Apellido" id="Apellido" placeholder="Apellido" maxlength="25"></td>
+                </tr>
+                <tr>
+                    <td>Direcci&oacute;n</td>
+                    <td><textarea name="Direccion" id="Direccion" maxlength="15" placeholder="Direccion"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Telefono</td>
+                    <td><input type="text" name="telefono" id="telefono" maxlength="15" value="0299"></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="get" id="get" value="Alquilar">Alquilar</td>
+                    <td><input type="radio" name="get" id="get" value="compra">Comprar</td>
+                </tr>
+                <tr>
+                    <td align="center">Zona</td>
+                    <td>
+                        <input type="checkbox" name="zonaCentro" id="zonaCentro">Zona Centro <br>
+                        <input type="checkbox" name="zonaNorte" id="zonaNorte" checked>Zona Norte <br>
+                        <input type="checkbox" name="zonaSur" id="zonaSur" checked>Zona Sur
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Comentario</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><textarea name="comentario" id="comentario" placeholder="comentario"></textarea></td>
+                </tr>
+                <tr>
+                    <td><input type="reset"></td>
+                    <td><input type="submit" value="Enviar"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Formulario</title>
+    </head>
+    <body>
+        <form>
+            <table border="2">
+                <tr align="center" bgcolor="#0FD7DB">
+                    <th>Name</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" name="name" id="name"></td>
+                </tr>
+                <tr>
+                    <td>Sex</td>
+                    <td>
+                        <input type="radio" name="sex" id="sex"> male <br>
+                        <input type="radio" name="sex" id="sex" checked> female <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>eye color</td>
+                    <td>
+                        <select name="color" id="color">
+                            <option value="0">green</option>
+                            <option value="1">black</option>
+                            <option value="2">blue</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Check all that apply</td>
+                    <td>
+                        <input type="checkbox" name="over" id="over"> Over 6 feet tall <br>
+                        <input type="checkbox" name="pounds" id="pounds"> Over 200 pounds
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Describe your athketic ability <br>
+                        <textarea name="Describe" id="Describe"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input type="submit" value="Enter my information"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
