@@ -1,0 +1,15 @@
+h1{
+    font-family: "Times New Roman", Times, serif;
+    color: darkred;
+    font-size: small;
+}
+h2{
+    font-family: "Times New Roman", Times, serif;
+    color: darkgreen;
+    font-size: medium;
+}
+p{
+    font-family: "arial";
+    color: darkblue;
+    font-size: smaller;
+}
