@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Formulario compra</title>
+    </head>
+    <style>
+        #nombre, #apellido , #telefono{
+            border: 1px double #C5C5C5;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:12px;
+            padding: 5px;
+            color: #666666;
+        }
+        #restablecer{
+            border: 1px double darkred;
+            font-style: italic;
+            background-color: red;
+        } 
+        #enviar{
+            border: 1px double darkgreen;
+            font-style: italic;
+            background-color: green;
+        }
+    </style>
+    <body>
+        <form>
+            Nombre <br>
+            <input type="text" name="nombre" id="nombre" placeholder="nombre" maxlength="25"> <br>
+            Apellido <br>
+            <input type="text" name="Apellido" id="Apellido" placeholder="Apellido" maxlength="25"> <br>
+            Direcci&oacute;n <br>
+            <textarea name="Direccion" id="Direccion" maxlength="15" placeholder="Direccion"></textarea> <br>
+            Telefono <br>
+            <input type="text" name="telefono" id="telefono" maxlength="15" value="0299"> <br>
+            
+            <input type="radio" name="get" id="get" value="Alquilar">Alquilar
+            <input type="radio" name="get" id="get" value="compra">Comprar
+               
+            Zona <br>
+            <input type="checkbox" name="zonaCentro" id="zonaCentro">Zona Centro <br>
+            <input type="checkbox" name="zonaNorte" id="zonaNorte" checked>Zona Norte <br>
+            <input type="checkbox" name="zonaSur" id="zonaSur" checked>Zona Sur
+            Comentario <br>
+            <textarea name="comentario" id="comentario" placeholder="comentario"></textarea> <br> <br>
+            <input type="reset" id="restablecer">
+            <input type="submit" id="enviar" value="enviar">
+            
+        </form>
+    </body>
+</html>

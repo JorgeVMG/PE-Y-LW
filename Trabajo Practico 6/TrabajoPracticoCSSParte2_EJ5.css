@@ -1,9 +1,9 @@
 /* === IMPORTANTE ===================================================
    No modificar estos estilos, ya que son imprescindibles para
-   que la página se vea correctamente.
+   que la pï¿½gina se vea correctamente.
    ================================================================== */
 
-/*-- Básico ----------------------------------------------------------*/
+/*-- Bï¿½sico ----------------------------------------------------------*/
 ul, ul li { margin: 0; padding: 0; list-style: none; }
 h1, h2, h3, p, form { margin: 0; padding: 0; }
 .clear { clear: both; }
@@ -13,16 +13,18 @@ img { border: none; }
 #contenedor {
   width: 90%;
   max-width: 900px;
-  width: expression(document.body.clientWidth > 901? "900px": "auto");
+  width: "900px" "auto";
   margin: 0 auto;
 }
 
 #cabecera, #menu, #lateral, #contenido, #contenido #principal, #contenido #secundario, #pie {
-  border: 2px solid #777;
 }
 
 #cabecera { clear: both; }
-#menu { clear: both; }
+#menu {
+  clear: both; 
+}
+
 #lateral { float: left; width: 20%; }
 #contenido { float: right; width: 78%; }
 #contenido #principal { float: left; width: 78%; }
@@ -36,15 +38,15 @@ img { border: none; }
 /*-- Menu ------------------------------------------------------------*/
 #menu ul#menu_principal li { display: inline; float: left; }
 
-/*-- Sección Principal -----------------------------------------------*/
+/*-- Secciï¿½n Principal -----------------------------------------------*/
 #contenido #principal .articulo img { width: 100px; float: left; }
 
-/*-- Pie de página ---------------------------------------------------*/
+/*-- Pie de pï¿½gina ---------------------------------------------------*/
 #pie .enlaces   { float: left; }
 #pie .copyright { float: right; }
 
 /* === IMPORTANTE ===================================================
-   A partir de aquí, se pueden añadir todos los estilos propios que 
+   A partir de aquï¿½, se pueden aï¿½adir todos los estilos propios que 
    sean necesarios.
    ================================================================== */
 
@@ -71,8 +73,14 @@ img { border: none; }
 
 #menu {
   margin-bottom: .5em;
+  border-bottom: 1px double #004C99;
 }
-
+#noticias{
+  border-bottom: 1px double #C5C5C5;
+  border-top: 1px double #C5C5C5;
+  border-right: 1px double #C5C5C5;
+  border-left: 1px double #C5C5C5;
+}
 #contenido {
   width: 77%;
   padding: 0;
@@ -85,6 +93,8 @@ img { border: none; }
 #pie {
   padding: .5em 0;
   margin-top: 1em;
+  border-top: 1px double #C5C5C5;
+  border-bottom: 1px double #C5C5C5;
 }
 
 #contenido #principal .articulo {
@@ -97,4 +107,15 @@ img { border: none; }
 
 #lateral #publicidad {
   margin-top: 1em;
+}
+#publicidad{
+  border-style: dashed; 
+  border-width: 1px;
+  border-color: #CC6600;
+}
+#secundario{
+  border-bottom: 1px double #CC6600;
+  border-top: 1px double #CC6600;
+  border-right: 1px double #CC6600;
+  border-left: 1px double #CC6600;
 }
