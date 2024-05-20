@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans, "lucida grande", tahoma, verdana, sans-serif;
+    font-size: 11px;
+    background-color: white;
+    color: black;
+}
+#linkLists{
+    width: 20%;
+}
+#intro,#supportingText{
+    width: 80%;
+    float: right;
+}
+#pageHeader h1{
+    padding: 10px;
+    border: 1px double black;
+    background-color:  #ddd;
+    position: relative;
+    z-index: 1; 
+}
+#pageHeader h2{
+    border: 1px double gray;
+    padding: 16px;
+    position: relative;
+    top: -10px;
+    z-index: 2;
+}
+#lresources ul{
+    list-style-type: none;
+    width: 15%;
+    background-color:  #9cf;
+}
+#lresources a{
+    text-decoration: none;
+    color: #036;
+    font-weight: bold;
+}
+#lresources a:hover{
+    background-color: #036;
+    color:  #9cf;
+}
+
+#lselect{
+    list-style-image: url('blue_bullet.gif');
+}
+#pageHeader h1{
+    background-image: url(css_zen_garden.gif);
+    text-indent: -9999%;
+    background-repeat: no-repeat; 
+}

@@ -1,0 +1,51 @@
+
+.top1, .Izquierda1, .Centro1, .Derecha{
+    background-color: rgb(116, 116, 115);
+    border: 5px solid rgb(198, 196, 195);
+    margin: 10px;
+}
+.Izquierda1{
+    width: 20%;
+    height: 400px;
+    float: left;
+}
+.Centro1{
+    text-align: center;
+    width: 55%;
+    height: 400px;
+    float: left;
+}
+.Derecha{
+    width: 20%;
+    height: 400px;
+    float: right;
+}
+hr.n{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+.Top2, .Izquierda2, .Centro2, .Pie{
+    background-color: rgb(116, 116, 115);
+    border: 5px solid rgb(198, 196, 195);
+    margin: 10px;
+}
+.Izquierda2{
+    width: 20%;
+    height: 400px;
+    float: left;
+}
+.Centro2{
+    text-align: center;
+    width: 75%;
+    height: 400px;
+    float: right;
+}   
+.Pie{
+    clear: both;
+}
+hr.p{
+    width: 100%;
+    height: 2px;
+    background-color: gainsboro;
+}
