@@ -1,52 +1,90 @@
-body{
+body {
     margin: 0;
     padding: 0;
-    font-family: sans, "lucida grande", tahoma, verdana, sans-serif;
+    font-family:  sans, "lucida grande", tahoma, verdana, sans-serif;
     font-size: 11px;
     background-color: white;
     color: black;
 }
-#linkLists{
-    width: 20%;
-}
-#intro,#supportingText{
-    width: 80%;
-    float: right;
-}
-#pageHeader h1{
-    padding: 10px;
-    border: 1px double black;
-    background-color:  #ddd;
-    position: relative;
-    z-index: 1; 
-}
-#pageHeader h2{
-    border: 1px double gray;
-    padding: 16px;
-    position: relative;
-    top: -10px;
-    z-index: 2;
-}
-#lresources ul{
-    list-style-type: none;
-    width: 15%;
-    background-color:  #9cf;
-}
-#lresources a{
-    text-decoration: none;
-    color: #036;
-    font-weight: bold;
-}
-#lresources a:hover{
-    background-color: #036;
-    color:  #9cf;
+#container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto auto;
 }
 
-#lselect{
-    list-style-image: url('blue_bullet.gif');
+#intro {
+    grid-column: 2/3;
 }
-#pageHeader h1{
-    background-image: url(css_zen_garden.gif);
-    text-indent: -9999%;
-    background-repeat: no-repeat; 
+
+#supportingText {
+    grid-column: 2/3;
+}
+
+#linkList {
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+#pageHeader h1 {
+    margin: 0;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: #ddd;
+    position: relative;
+    top: 10px;
+}
+
+#pageHeader h2 {
+    margin: 0;
+    padding: 15px;
+    border: 1px solid grey;
+    z-index: 1;
+}
+#lresources ul {
+    list-style: none;
+    background-color: #9cf;
+}
+#lresources ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #036;
+}
+
+#lresources ul li a:hover {
+    background-color: #036;
+    color: #9cf;
+}
+
+#larchives ul {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+#larchives ul li:first-child, #larchives ul li:last-child {
+    grid-column: 2;
+}
+
+#larchives ul li:nth-child(2){
+    grid-row: 1;
+}
+#lselect ul {
+    list-style-image: url("./blue_bullet.gif");
+}
+
+#pageHeader h1 {
+    background-image: url("./css_zen_garden.gif");
+    background-size: 190px;
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: 10px;
+    overflow: hidden;
+    text-indent: -190px;
+}
+
+#pageHeader h2 {
+    background-image: url("./zen_h2_back.gif");
+    background-position-y: 0;
+    background-repeat: repeat-x;
+    background-color: #489AED;
 }
