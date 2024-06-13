@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function toggleLista(text) {
+            var lista ;
+            if(text === "li1"){
+                lista = document.getElementById("li1")
+            }else{
+                lista = document.getElementById("li2")
+            }
+            if (lista.style.display === 'none') {
+                lista.style.display = 'block'; // Mostrar la lista
+            } else {
+                lista.style.display = 'none'; // Ocultar la lista
+            }
+        }
+    </script>
+    <ul>
+        <li>Neuqu&eacute;n <button onclick="toggleLista('li1')">;</button></li>
+          <ul id="li1" style="display: none;">
+            <li>Neuquen</li>
+            <li>Zapala</li>
+            <li>San Martin</li>
+            <li>Junin</li>
+          </ul>
+        <li>Provincia 2 <button onclick="toggleLista('li2')">;</button></li>
+          <ul id="li2" style="display: none;">
+            <li>Ciudad X</li>
+            <li>Ciudad Y</li>
+          </ul>
+       
+      </ul>
+</body>
+</html>

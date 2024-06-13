@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function Buclefor(array){
+            var salida;
+            salida = "<ul>";
+            for(var i=0; i<array.length; i++){
+                salida += "<li>"+array[i]+"</li>";
+            }
+            salida += "</ul>";
+            document.write(salida);
+        }
+        function BucleWhile(array){
+            var salida = "<ul>";
+            var i = 0;
+            while(i < array.length) {
+                salida += "<li>" + array[i] + "</li>";
+                i++;
+            }
+            salida += "</ul>";
+            document.write(salida);
+        }
+        function BucleDoWhile(array) {
+            var salida = "<ul>";
+            var i = 0;
+            do {
+                salida += "<li>" + array[i] + "</li>";
+                i++;
+            } while(i < array.length);
+            salida += "</ul>";
+            document.write(salida);
+        }
+
+        function BucleForen(array) {
+            var salida = "<ul>";
+            for(var i in array) {
+                salida += "<li>" + array[i] + "</li>";
+            }
+            salida += "</ul>";
+            document.write(salida);
+        }
+    </script>
+</head>
+<body>
+    <script type="text/javascript">
+        var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio","Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+        Buclefor(meses);
+        BucleWhile(meses);
+        BucleDoWhile(meses);
+        BucleForen(meses);
+    </script>
+</body>
+</html>

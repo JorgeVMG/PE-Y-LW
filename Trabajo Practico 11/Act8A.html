@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            padding: 0;
+        }
+        li {
+            padding: 10px; 
+        }
+    </style>
+</head>
+<body>
+    <script type="text/javascript">
+        function azul(){
+            var ul = document.getElementById("color")
+            ul.style.backgroundColor="blue";
+        }
+        function amarrilo(){
+            var ul = document.getElementById("color")
+            ul.style.backgroundColor="yellow";
+        }
+        function rojo(){
+            var ul = document.getElementById("color")
+            ul.style.backgroundColor="red";
+        }
+        function marron(){
+            var ul = document.getElementById("color")
+            ul.style.backgroundColor="brown";
+        }
+        function blanco(){
+            var ul = document.getElementById("color")
+            ul.style.backgroundColor="white";
+        }
+
+    </script>
+    <ul id="color">
+        <li onmouseover="azul()" onmouseout="blanco()">azul</li>
+        <li onmouseover="amarrilo()" onmouseout="blanco()">amarrilo</li>
+        <li onmouseover="rojo()" onmouseout="blanco()">rojo</li>
+        <li onmouseover="marron()" onmouseout="blanco()">marron</li>
+    </ul>
+</body>
+</html>

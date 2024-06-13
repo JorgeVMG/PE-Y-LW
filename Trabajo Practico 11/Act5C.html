@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function pesosADolares(){
+                var cantPesos, costoDolar, salida, conversion;
+                cantPesos= prompt("Pesos a cambiar", 0);
+                costoDolar=896.06;
+                conversion=parseInt(cantPesos)/costoDolar;
+                salida=document.getElementById("salida");
+                salida.value+="la cantidad de pesos a dolar es de $"+conversion.toFixed(2)+"\n"; 
+            }
+            function dolarAPesos(){
+                var cantDolar, costoPeso, salida, conversion;
+                cantDolar= prompt("Dolares a cambiar", 0);
+                costoPeso=895.50;
+                conversion=parseInt(cantDolar)*costoPeso;
+                salida=document.getElementById("salida");
+                salida.value+="la cantidad de dolares a pesos es de $"+conversion.toFixed(2)+"\n"; 
+            }
+            function pesosAReales(){
+                var cantPesos, costoReales, salida, conversion;
+                cantPesos= prompt("Pesos a cambiar", 0);
+                costoReales=169.49;
+                conversion=parseInt(cantPesos)/costoReales;
+                salida=document.getElementById("salida");
+                salida.value+="la cantidad de pesos a reales es de $"+conversion.toFixed(2)+"\n"; 
+            }
+            function realAPesos(){
+                var cantReal, costoPeso, salida, conversion;
+                cantReal= prompt("Reales a cambiar", 0);
+                costoPeso=170.69;
+                conversion=parseInt(cantReal)*costoPeso;
+                salida=document.getElementById("salida");
+                salida.value+="la cantidad de Reales a pesos es de $"+conversion.toFixed(2)+"\n"; 
+            }
+            function pesosAEuros(){
+                var cantPesos, costoEuro, salida, conversion;
+                cantPesos= prompt("Pesos a cambiar", 0);
+                costoEuro=970.87;
+                conversion=parseInt(cantPesos)/costoEuro;
+                salida=document.getElementById("salida");
+                salida.value+="la cantidad de pesos a euro es de $"+conversion.toFixed(2)+"\n"; 
+            }
+            function euroAPesos(){
+                var cantEuro, costoPeso, salida, conversion;
+                cantEuro= prompt("Euro a cambiar", 0);
+                costoPeso=970.81;
+                conversion=parseInt(cantEuro)*costoPeso;
+                salida=document.getElementById("salida");
+                salida.value+="la cantidad de Euro a pesos es de $"+conversion.toFixed(2)+"\n"; 
+            }
+    </script>
+</head>
+<body>
+    <h1>Conversiones</h1>
+    <button onclick="pesosADolares()">Pesos a dolares</button>
+    <button onclick="dolarAPesos()">Dolares a Pesos</button> <br><br>
+    <button onclick="pesosAReales()">Pesos a Reales</button>
+    <button onclick="realAPesos()">Reales a Pesos</button><br> <br>
+    <button onclick="pesosAEuros()">Pesos a Euros</button>
+    <button onclick="euroAPesos()">Euro a Pesos</button>
+    <br>
+    <h2>Resultado de conversion</h2> <br>
+    <textarea id="salida" name="salida" rows="10" cols="50"></textarea> 
+</body>
+</html>
