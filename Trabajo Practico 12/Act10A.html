@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+         function mostrarFechaYTiempoRestante() {
+            var fechaActual = new Date();
+            var salida = "";
+            salida += "<p>Fecha Actual: " + fechaActual.getDate() + "/" + (fechaActual.getMonth() + 1) + "/" + fechaActual.getFullYear() +
+                      "<br>Hora: " + fechaActual.getHours() + ":" + fechaActual.getMinutes() + ":" + fechaActual.getSeconds() + "</p>";
+            document.getElementById("salida1").innerHTML = salida;
+
+            var fechaParcial = new Date("2024-06-18"); // Fecha del parcial de JavaScript
+            var ahora = new Date(); // Fecha y hora actual
+            var diferencia = fechaParcial - ahora; // Diferencia en milisegundos entre las fechas
+
+            var dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+            var horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+            var segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+
+            fechaParcial.setDate(fechaActual.getDate() + dias); // Establecer la fecha
+            fechaParcial.setHours(fechaActual.getHours() + horas); // Establecer la hora
+            fechaParcial.setMinutes(fechaActual.getMinutes() + minutos); // Establecer los minutos
+            fechaParcial.setSeconds(fechaActual.getSeconds() + segundos); // Establecer los segundos
+
+            var salida2 = "";
+            salida2 += "<p>Días Restantes: " + dias + "<br>Hora Restante: " + horas + ":" + minutos + ":" + segundos + "</p>";
+            document.getElementById("salida2").innerHTML = salida2;
+        }
+    </script>
+    <h1>Fecha Actual y Tiempo Restante para el Parcial</h1>
+    <button onclick="mostrarFechaYTiempoRestante()">Mostrar Fecha y Tiempo Restante</button>
+    <div id="salida1"></div>
+    <div id="salida2"></div>
+</body>
+</html>

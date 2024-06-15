@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function mostrarMensaje() {
+            var mensaje = document.getElementById("mensaje").value;
+            var salida = document.getElementById("salida");
+            var mensajeMayuscula = mensaje.toUpperCase();
+            var mensajeMinuscula = mensaje.toLowerCase();
+            var mensajeSubMensaje = mensaje.substr(4, 10);
+            var mensajeIncluyeHola = mensaje.includes("hola") ? "hola que tal" : "";
+            var mensajeSinEspacios = mensaje.replace(/\s+/g, "");
+            var resultadoSinEspacios = mensajeSinEspacios.replace(/\bhola\b/g, "");
+            salida.innerHTML += "<p>Mensaje en Mayúscula: " + mensajeMayuscula + "</p>";
+            salida.innerHTML += "<p>Mensaje en Minúscula: " + mensajeMinuscula + "</p>";
+            salida.innerHTML += "<p>Solo el sub-mensaje: " + mensajeSubMensaje + "</p>";
+            salida.innerHTML += "<p>Si incluye Hola: " + mensajeIncluyeHola + "</p>";
+            salida.innerHTML += "<p>Mensaje sin Espacios: " + resultadoSinEspacios + "</p>";
+        }
+    </script>
+</head>
+<body>
+    <p>Ingresar un mensaje:</p>
+    <input type="text" id="mensaje">
+    <button onclick="mostrarMensaje()">En pantalla</button>
+    <div id="salida"></div>
+</body>
+</html>
