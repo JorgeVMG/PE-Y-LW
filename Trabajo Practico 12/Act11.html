@@ -1,11 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Chat</title>
+    <style>
+    </style>
+    <script type="text/javascript">
+        function enviarMensaje(event){
+            event.preventDefault(); // Evitar el envío del formulario
+            var fecha = new Date();
+            var nombre = document.getElementById("nombre").value;
+            var texto = document.getElementById("post").value;
+            var salida = "<p>"+fecha.getDate()+"/"+(fecha.getMonth()+1)+"/"+fecha.getFullYear()+" "+fecha.getHours()+":"+fecha.getMinutes()+":"+fecha.getSeconds()+
+                " por "+nombre+"<br>"+texto+"</p>";
+            var listar = document.getElementById("salida");
+            listar.innerHTML += salida;
+        }
+        function eliminarMensaje(){
+            document.getElementById("post").value = ""; 
+        }
+    </script>
 </head>
 <body>
-    
+    <h1>CHAT</h1>
+    <hr>
+    <form id="miFormulario">
+        Nombre: 
+        <input type="text" id="nombre" name="nombre"><br>
+        <textarea name="post" id="post" onmouseover="eliminarMensaje()"></textarea><br>
+        <input type="submit" id="enviar" value="Enviar Mensaje" onclick="enviarMensaje(event)">
+    </form>
+    <div id="salida"></div>
 </body>
 </html>
